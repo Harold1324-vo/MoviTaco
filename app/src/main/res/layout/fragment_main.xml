@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".MainFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="40dp"
+            android:text="MoviTaco"
+            android:textColor="#ffffec"
+            android:textSize="40sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Bienvenido"
+            android:textColor="#ffffec"
+            android:textSize="25sp"
+            android:textStyle="italic" />
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/tacoLottie"
+            android:layout_width="match_parent"
+            android:layout_height="330dp"
+            android:layout_marginBottom="-15dp"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"
+            app:lottie_rawRes="@raw/taco" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:text="Administra \nRegistra \nReporta"
+            android:textSize="40sp"
+            android:textStyle="bold"
+            android:textColor="#ffffec"
+            android:layout_marginLeft="28dp"
+            android:layout_marginTop="-5dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Todo lo relacionado con tu taqueria"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="#ffffec"
+            android:layout_marginTop="16dp"/>
+
+        <Button
+            android:id="@+id/btnInicioSesion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="Comenzar"
+            android:layout_marginTop="45dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:textColor="#000"
+            android:backgroundTint="#ffff"
+            android:textStyle="normal"
+            android:textSize="20sp"
+            app:cornerRadius="10dp" />
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="match_parent"
+            android:layout_height="110dp"
+            android:src="@mipmap/logo" />
+    </LinearLayout>
+
+</FrameLayout>

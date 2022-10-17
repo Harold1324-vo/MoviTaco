@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".AgregarAlimentosFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="392dp"
+            android:layout_height="262dp"
+            android:layout_gravity="center"
+            android:src="@mipmap/logo" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Agregar Alimento"
+            android:textSize="40sp"
+            android:textStyle="bold"
+            android:textColor="#ffffec"
+            android:layout_marginTop="32dp"/>
+
+        <EditText
+            android:id="@+id/etIdProducto"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_margin="20dp"
+            android:background="@drawable/while_background_edt"
+            android:drawableStart="@drawable/ic_food"
+            android:drawablePadding="10dp"
+            android:ems="10"
+            android:hint="Id Taqueria"
+            android:inputType="number"
+            android:paddingStart="10dp"
+            android:textColorHint="#000000"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/etNombreProducto"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_margin="20dp"
+            android:background="@drawable/while_background_edt"
+            android:drawableStart="@drawable/ic_food"
+            android:drawablePadding="10dp"
+            android:ems="10"
+            android:hint="Nombre de la comida"
+            android:inputType="textPersonName"
+            android:paddingStart="10dp"
+            android:textColorHint="#000000"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/etPrecioProducto"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_margin="20dp"
+            android:background="@drawable/while_background_edt"
+            android:drawableStart="@drawable/ic_price"
+            android:drawablePadding="10dp"
+            android:ems="10"
+            android:hint="Nombre de la comida"
+            android:inputType="number"
+            android:paddingStart="10dp"
+            android:textColorHint="#000000"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/etFechaCreacion"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:hint="fecha creacion"
+            android:visibility="invisible"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/etFechaActualizacion"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:hint="fecha actualizacion"
+            android:visibility="invisible"
+            android:inputType="textPersonName" />
+
+        <Button
+            android:id="@+id/btnActualizar"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:backgroundTint="#ffff"
+            android:text="Registrar"
+            android:textColor="#000"
+            android:textSize="20sp"
+            app:cornerRadius="10dp" />
+
+    </LinearLayout>
+
+</RelativeLayout>

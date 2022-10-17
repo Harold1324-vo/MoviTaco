@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/background"
+    tools:context=".PrincipalAdministradorFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="match_parent"
+            android:layout_height="207dp"
+            android:src="@mipmap/logo" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/btnAgregarAlimentos"
+                android:layout_width="match_parent"
+                android:layout_height="136dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:layout_gravity="center"
+                android:backgroundTint="#C49B2E "
+                android:drawableLeft="@mipmap/taco"
+                app:cornerRadius="20dp"
+                android:text="Alimentos" />
+
+            <Button
+                android:id="@+id/btnAgregarBebidas"
+                android:layout_width="match_parent"
+                android:layout_height="136dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:layout_gravity="center"
+                android:backgroundTint="#1390AF "
+                android:drawableLeft="@mipmap/bebida"
+                app:cornerRadius="20dp"
+                android:text="Bebidas" />
+
+            <Button
+                android:id="@+id/btnAgregarMeseros"
+                android:layout_width="match_parent"
+                android:layout_height="136dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:backgroundTint="#2EC459 "
+                android:drawableLeft="@mipmap/mesero"
+                app:cornerRadius="20dp"
+                android:text="Meseros" />
+
+            <Button
+                android:id="@+id/btnGenerarReportes"
+                android:layout_width="match_parent"
+                android:layout_height="136dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:layout_gravity="center"
+                android:backgroundTint="#13AFA7 "
+                android:drawableLeft="@mipmap/reporte"
+                app:cornerRadius="20dp"
+                android:text="Generar reportes" />
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>
